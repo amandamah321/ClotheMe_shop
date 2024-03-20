@@ -1,0 +1,20 @@
+@import url(./index.css);
+@import url(./contacto.css);
+@import url(./productos.css);
+@import url(./presupuesto.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+}
+
+body {
+    width: 100vw;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    
+}

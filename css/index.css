@@ -1,0 +1,297 @@
+/**Sign Up**/
+
+.signUp_container {
+  background-color: #000;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.signUp_msg {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/**NavBar**/
+
+.navBar_container {
+  height: 5rem;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 70px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: -3px;
+  cursor: pointer;
+
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navBar_list {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  
+}
+
+.word--style {
+  font-weight: 900;
+}
+
+.navBar_list li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.navBar_list li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/**Banner**/
+
+.banner {
+  height: 100vh;
+  background-image: url(/trabalho_final_HTML/images/models/banner-model.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_text {
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 3rem;
+  padding: 1rem;
+  color: #000;
+  text-align: left;
+}
+
+.banner_text h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.banner_text p {
+  color: #202020;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+/**Button**/
+
+.buyNow {
+  background-color: #000;
+  height: 50px;
+  width: 10rem;
+  color: #fff;
+  border: none;
+  border-radius: 62px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/**Brands Section**/
+
+.brands {
+  background-color: #000;
+  padding: 40px;
+  text-align: center;
+}
+
+.brands h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.brands_logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.brands_logo--align {
+  margin: 1rem 3rem;
+}
+
+
+/**Dress Styles**/
+
+.dress_style {
+  background-color: #F0F0F0;
+  padding: 40px 20px;
+  border-radius: 20px;
+  color: #000;
+}
+
+.dress_style h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.style_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.style_container figure img {
+  border-radius: 20px;
+  width: 30rem;
+  height: 15rem; 
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.style--text {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 12%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/**Footer**/
+
+footer {
+  color: #000;
+  padding: 40px 100px;
+}
+
+.footer_container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer_left {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.socialMedia i {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.footer_right ul li {
+  list-style: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.footer_rights {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #202020;
+}
+
+
+/*Hover*/
+
+.navBar_list li:hover {
+  transform: scale(1.1);
+}
+
+.buyNow:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.style_container figure img:hover {
+  filter: none;
+}
+
+/*Media*/
+
+@media screen and (max-width: 950px) {
+  .banner_text h1{
+    font-size: 40px;
+    top: 20%;
+  }
+
+  .banner_text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    display: none;
+  }
+
+  .navBar_container {
+    justify-content: center;
+  }
+
+  .navBar_list li a {
+    font-size: 1.3rem;
+  }
+  
+  .banner_text h1{
+    font-size: 35px;
+  }
+
+  .banner_text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+
+  .navBar_list li a {
+    font-size: 15px;
+  }
+  
+  .banner_text h1{
+    font-size: 25px;
+  }
+
+  .banner_text p {
+    font-size: 15px;
+  }
+
+  .banner_text {
+    padding: 0;
+  }
+}
