@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClothesMe.Co | Presupuesto</title>
-    <link rel="stylesheet" href="/trabalho_final_HTML/css/global.css">
+    <link rel="stylesheet" href="/css/global.css">
     <script src="https://kit.fontawesome.com/7819412f9b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,7 +16,7 @@
         <nav class="navBar_container">
             <span class="logo"><a href="/trabalho_final_HTML/index.html">ClothesMe.co</a></span>
             <ul class="navBar_list">
-                <li><a href="/trabalho_final_HTML/index.html">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li class="word--style"><a href="./presupuesto.html">Presupuesto</a></li>
                 <li><a href="./productos.html">Productos</a></li>
@@ -28,9 +28,9 @@
         <h1>Solicita ahora tu presupuesto para nuestros combos mensuales</h1>
         <form name="formulario">
             <div class="form_left">
-                <input type="text" name="nombre" autofocus placeholder="Nombre" required>
-                <input type="text" name="email" pattern="+@.com" size="30" placeholder="Email" required>
-                <input type="text" name="telefono" minlength="9" maxlength="9" placeholder="Teléfono" required>
+                <input type="text" name="nombre" pattern="[A-Za-z]{1,32}" autofocus placeholder="Nombre" required>
+                <input type="text" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" size="30" placeholder="Email" required>
+                <input type="text" name="telefono" pattern="{9}" minlength="9" maxlength="9" placeholder="Teléfono" required>
                 
             </div>
             <div class="form_right">
